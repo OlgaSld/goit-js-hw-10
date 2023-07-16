@@ -66,6 +66,7 @@ function onSelectCat(e) {
 
 function onError(error) {
     elements.loader.classList.replace('loader', 'is-hidden');
+    elements.selectCat.classList.remove('is-hidden');
     elements.catInfo.classList.add('is-hidden');
     elements.error.classList.add('is-hidden');
 
