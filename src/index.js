@@ -12,6 +12,7 @@ const elements = {
 // console.log(elements.selectCat);
 // console.log(elements.catInfo);
 
+
 elements.catInfo.classList.add('is-hidden');
 elements.loader.classList.replace('is-hidden', 'loader');
 elements.error.classList.add("is-hidden");
@@ -33,7 +34,7 @@ elements.selectCat.addEventListener('change', onSelectCat);
 
 function onSelectCat(e) {
     elements.loader.classList.replace('is-hidden', 'loader');
-    elements.selectCat.classList.add('is-hidden');
+    elements.selectCat.classList.remove('is-hidden');
     elements.catInfo.classList.add('is-hidden');
     elements.error.classList.add('is-hidden');
 
